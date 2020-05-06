@@ -32,7 +32,7 @@ export default class HealthNews extends Component {
 
   componentDidMount() {
     fetch(
-      "http://newsapi.org/v2/top-headlines?country=us&category=sport&apiKey=d3164b0ab41b45a4a9a4a5b97049b95c"
+      "https://newsapi.org/v2/top-headlines?country=us&category=sport&apiKey=d3164b0ab41b45a4a9a4a5b97049b95c"
     )
       .then(res => res.json())
       .then(data => {
