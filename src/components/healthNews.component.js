@@ -36,7 +36,7 @@ export default class HealthNews extends Component {
     )
       .then(res => res.json())
       .then(data => {
-        this.setState({ news: data.articles });
+        this.setState( { news: data.articles });
         console.log(this.state.news);
       })
       .catch(err => console.log(err));
